@@ -3,13 +3,13 @@ public class Test {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		//Not: milisaniye cinsinden 0 çýkanlar nanosaniyeye çevirildi daha sonra büyütülmüþ size da yüksek deðerler içerdiklerinden yeniden milisaniye olarak yazýldý
-		//tüm arraylerin size ý buradan kontrol edilir.
+		//Not: milisaniye cinsinden 0 Ã§Ã½kanlar nanosaniyeye Ã§evirildi daha sonra bÃ¼yÃ¼tÃ¼lmÃ¼Ã¾ size da yÃ¼ksek deÃ°erler iÃ§erdiklerinden yeniden milisaniye olarak yazÃ½ldÃ½
+		//tÃ¼m arraylerin size Ã½ buradan kontrol edilir
 		 int size=100;
 		 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		 //EQUAL INTEGERS ARRAY
 		 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
-		 //burada size 1000, 10000,  100000 yapýlarak mergesort 2 part iken equal integers array run time ý bulunabilir 
+		 //burada size 1000, 10000,  100000 yapÃ½larak mergesort 2 part iken equal integers array run time Ã½ bulunabilir 
 		 int[] arrayToSort= equalArray(size);
 		 long startTime = System. currentTimeMillis();
 		 MergeSortClass.mergeSort(arrayToSort,"TwoParts");
@@ -17,28 +17,28 @@ public class Test {
 		 System.out.println("Estimated Time For equalArray when size "+ arrayToSort.length+" and sort type is mergeSort two parts : "+ estimatedTime);
 		 //printArray(arrayToSort,arrayToSort.length);
 		
-		//yukarýdan size 1000, 10000,  100000 yapýlarak mergesort 3 part iken equal integers array run time ý bulunabilir  
+		//yukarÃ½dan size 1000, 10000,  100000 yapÃ½larak mergesort 3 part iken equal integers array run time Ã½ bulunabilir  
 		 startTime = System. currentTimeMillis();
 		 MergeSortClass.mergeSort(arrayToSort,"ThreeParts");
 		 estimatedTime = System. currentTimeMillis() - startTime;
 		 System.out.println("Estimated Time For equalArray when size "+ arrayToSort.length+" and sort type is mergeSort three parts : "+ estimatedTime);
 		 //printArray(arrayToSort,arrayToSort.length);
 		 
-		//yukarýdan size 1000, 10000,  100000 yapýlarak quicksort first element pivot  iken equal integers array run time ý bulunabilir 
+		//yukarÃ½dan size 1000, 10000,  100000 yapÃ½larak quicksort first element pivot  iken equal integers array run time Ã½ bulunabilir 
 		 startTime = System. currentTimeMillis();
 		 QuickSortClass.quickSort(arrayToSort,"f");
 		 estimatedTime = System. currentTimeMillis() - startTime;
 		 System.out.println("Estimated Time For equalArray when size "+ arrayToSort.length+" and sort type is quickSort first element pivot : "+ estimatedTime);
 		 //printArray(arrayToSort,arrayToSort.length);
 		 
-		//yukarýdan size 1000, 10000,  100000 yapýlarak quicksort random element pivot  iken equal integers array run time ý bulunabilir 
+		//yukarÃ½dan size 1000, 10000,  100000 yapÃ½larak quicksort random element pivot  iken equal integers array run time Ã½ bulunabilir 
 		 startTime = System. currentTimeMillis();
 		 QuickSortClass.quickSort(arrayToSort,"r");
 		 estimatedTime = System. currentTimeMillis() - startTime;
 		 System.out.println("Estimated Time For equalArray when size "+ arrayToSort.length+" and sort type is quickSort random element pivot : "+ estimatedTime);
 		 //printArray(arrayToSort,arrayToSort.length);
 		 
-		//yukarýdan size 1000, 10000,  100000 yapýlarak quicksort MidOfFirstMidLastElement  pivot  iken equal integers array run time ý bulunabilir 
+		//yukarÃ½dan size 1000, 10000,  100000 yapÃ½larak quicksort MidOfFirstMidLastElement  pivot  iken equal integers array run time Ã½ bulunabilir 
 		 startTime = System. currentTimeMillis();
 		 QuickSortClass.quickSort(arrayToSort,"m");
 		 estimatedTime = System. currentTimeMillis() - startTime;
@@ -50,7 +50,7 @@ public class Test {
 		 //RANDOM INTEGERS ARRAY
 		 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		 
-		 //yukarýdan size 1000, 10000,  100000 yapýlarak mergesort 2 part iken random integers array run time ý bulunabilir 
+		 //yukarÃ½dan size 1000, 10000,  100000 yapÃ½larak mergesort 2 part iken random integers array run time Ã½ bulunabilir 
 		 int[] arrayToSort2= randomArray(size);
 		 startTime = System. currentTimeMillis();
 		 MergeSortClass.mergeSort(arrayToSort2,"TwoParts");
@@ -58,28 +58,28 @@ public class Test {
 		 System.out.println("Estimated Time For randomArray when size "+ arrayToSort2.length+" and sort type is mergeSort two parts : "+ estimatedTime);
 		 //printArray(arrayToSort2,arrayToSort.length);
 		
-		//yukarýdan size 1000, 10000,  100000 yapýlarak mergesort 3 part iken random integers array run time ý bulunabilir  
+		//yukarÃ½dan size 1000, 10000,  100000 yapÃ½larak mergesort 3 part iken random integers array run time Ã½ bulunabilir  
 		 startTime = System. currentTimeMillis();
 		 MergeSortClass.mergeSort(arrayToSort2,"ThreeParts");
 		 estimatedTime = System. currentTimeMillis() - startTime;
 		 System.out.println("Estimated Time For randomArray when size "+ arrayToSort2.length+" and sort type is mergeSort three parts : "+ estimatedTime);
 		 //printArray(arrayToSort2,arrayToSort.length);
 		 
-		//yukarýdan size 1000, 10000,  100000 yapýlarak quicksort first element pivot  iken random integers array run time ý bulunabilir 
+		//yukarÃ½dan size 1000, 10000,  100000 yapÃ½larak quicksort first element pivot  iken random integers array run time Ã½ bulunabilir 
 		 startTime = System. currentTimeMillis();
 		 QuickSortClass.quickSort(arrayToSort2,"f");
 		 estimatedTime = System. currentTimeMillis() - startTime;
 		 System.out.println("Estimated Time For randomArray when size "+ arrayToSort2.length+" and sort type is quickSort first element pivot : "+ estimatedTime);
 		 //printArray(arrayToSort2,arrayToSort.length);
 		 
-		//yukarýdan size 1000, 10000,  100000 yapýlarak quicksort random element pivot  iken random integers array run time ý bulunabilir 
+		//yukarÃ½dan size 1000, 10000,  100000 yapÃ½larak quicksort random element pivot  iken random integers array run time Ã½ bulunabilir 
 		 startTime = System. currentTimeMillis();
 		 QuickSortClass.quickSort(arrayToSort2,"r");
 		 estimatedTime = System. currentTimeMillis() - startTime;
 		 System.out.println("Estimated Time For randomArray when size "+ arrayToSort2.length+" and sort type is quickSort random element pivot : "+ estimatedTime);
 		 printArray(arrayToSort2,arrayToSort.length);
 		 
-		//yukarýdan size 1000, 10000,  100000 yapýlarak quicksort MidOfFirstMidLastElement  pivot  iken random integers array run time ý bulunabilir 
+		//yukarÃ½dan size 1000, 10000,  100000 yapÃ½larak quicksort MidOfFirstMidLastElement  pivot  iken random integers array run time Ã½ bulunabilir 
 		 startTime = System. currentTimeMillis();
 		 QuickSortClass.quickSort(arrayToSort2,"m");
 		 estimatedTime = System. currentTimeMillis() - startTime;
@@ -91,7 +91,7 @@ public class Test {
 		 //INCREASING INTEGERS ARRAY
 		 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		 
-		 //burada size 1000, 10000,  100000 yapýlarak mergesort 2 part iken increasing integers array run time ý bulunabilir 
+		 //burada size 1000, 10000,  100000 yapÃ½larak mergesort 2 part iken increasing integers array run time Ã½ bulunabilir 
 		 int[] arrayToSort3= increasingArray(size);
 		 startTime = System. currentTimeMillis();
 		 MergeSortClass.mergeSort(arrayToSort3,"TwoParts");
@@ -99,28 +99,28 @@ public class Test {
 		 System.out.println("Estimated Time For increasingArray when size "+ arrayToSort3.length+" and sort type is mergeSort two parts : "+ estimatedTime);
 		 //printArray(arrayToSort3,arrayToSort.length);
 		
-		// size 1000, 10000,  100000 yapýlarak mergesort 3 part iken increasing integers array run time ý bulunabilir  
+		// size 1000, 10000,  100000 yapÃ½larak mergesort 3 part iken increasing integers array run time Ã½ bulunabilir  
 		 startTime = System. currentTimeMillis();
 		 MergeSortClass.mergeSort(arrayToSort3,"ThreeParts");
 		 estimatedTime = System. currentTimeMillis() - startTime;
 		 System.out.println("Estimated Time For increasingArray when size "+ arrayToSort3.length+" and sort type is mergeSort three parts : "+ estimatedTime);
 		 //printArray(arrayToSort3,arrayToSort.length);
 		 
-		//size 1000, 10000,  100000 yapýlarak quicksort first element pivot  iken increasing integers array run time ý bulunabilir 
+		//size 1000, 10000,  100000 yapÃ½larak quicksort first element pivot  iken increasing integers array run time Ã½ bulunabilir 
 		 startTime = System. currentTimeMillis();
 		 QuickSortClass.quickSort(arrayToSort3,"f");
 		 estimatedTime = System. currentTimeMillis() - startTime;
 		 System.out.println("Estimated Time For increasingArray when size "+ arrayToSort3.length+" and sort type is quickSort first element pivot : "+ estimatedTime);
 		 //printArray(arrayToSort3,arrayToSort.length);
 		 
-		//size 1000, 10000,  100000 yapýlarak quicksort random element pivot  iken increasing integers array run time ý bulunabilir 
+		//size 1000, 10000,  100000 yapÃ½larak quicksort random element pivot  iken increasing integers array run time Ã½ bulunabilir 
 		 startTime = System. currentTimeMillis();
 		 QuickSortClass.quickSort(arrayToSort3,"r");
 		 estimatedTime = System. currentTimeMillis() - startTime;
 		 System.out.println("Estimated Time For increasingArray when size "+ arrayToSort3.length+" and sort type is quickSort random element pivot : "+ estimatedTime);
 		 //printArray(arrayToSort3,arrayToSort.length);
 		 
-		//size 1000, 10000,  100000 yapýlarak quicksort MidOfFirstMidLastElement  pivot  iken increasing integers array run time ý bulunabilir 
+		//size 1000, 10000,  100000 yapÃ½larak quicksort MidOfFirstMidLastElement  pivot  iken increasing integers array run time Ã½ bulunabilir 
 		 startTime =System. currentTimeMillis();
 		 QuickSortClass.quickSort(arrayToSort3,"m");
 		 estimatedTime = System. currentTimeMillis() - startTime;
@@ -133,7 +133,7 @@ public class Test {
 		 //DECREASING INTEGERS ARRAY
 		 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		 
-		 //burada size 1000, 10000,  100000 yapýlarak mergesort 2 part iken decreasing integers array run time ý bulunabilir 
+		 //burada size 1000, 10000,  100000 yapÃ½larak mergesort 2 part iken decreasing integers array run time Ã½ bulunabilir 
 		 int[] arrayToSort4= decreasingArray(size);
 		 startTime = System. currentTimeMillis();
 		 MergeSortClass.mergeSort(arrayToSort4,"TwoParts");
@@ -141,28 +141,28 @@ public class Test {
 		 System.out.println("Estimated Time For decreasingArray when size "+ arrayToSort4.length+" and sort type is mergeSort two parts : "+ estimatedTime);
 		 //printArray(arrayToSort4,arrayToSort.length);
 		
-		// size 1000, 10000,  100000 yapýlarak mergesort 3 part iken decreasing integers array run time ý bulunabilir  
+		// size 1000, 10000,  100000 yapÃ½larak mergesort 3 part iken decreasing integers array run time Ã½ bulunabilir  
 		 startTime = System. currentTimeMillis();
 		 MergeSortClass.mergeSort(arrayToSort4,"ThreeParts");
 		 estimatedTime = System. currentTimeMillis() - startTime;
 		 System.out.println("Estimated Time For decreasingArray when size "+ arrayToSort4.length+" and sort type is mergeSort three parts : "+ estimatedTime);
 		 //printArray(arrayToSort4,arrayToSort.length);
 		 
-		//size 1000, 10000,  100000 yapýlarak quicksort first element pivot  iken decreasing integers array run time ý bulunabilir 
+		//size 1000, 10000,  100000 yapÃ½larak quicksort first element pivot  iken decreasing integers array run time Ã½ bulunabilir 
 		 startTime = System. currentTimeMillis();
 		 QuickSortClass.quickSort(arrayToSort4,"f");
 		 estimatedTime = System. currentTimeMillis() - startTime;
 		 System.out.println("Estimated Time For decreasingArray when size "+ arrayToSort4.length+" and sort type is quickSort first element pivot : "+ estimatedTime);
 		 //printArray(arrayToSort4,arrayToSort.length);
 		 
-		//size 1000, 10000,  100000 yapýlarak quicksort random element pivot  iken decreasing integers array run time ý bulunabilir 
+		//size 1000, 10000,  100000 yapÃ½larak quicksort random element pivot  iken decreasing integers array run time Ã½ bulunabilir 
 		 startTime = System. currentTimeMillis();
 		 QuickSortClass.quickSort(arrayToSort4,"r");
 		 estimatedTime = System. currentTimeMillis() - startTime;
 		 System.out.println("Estimated Time For decreasingArray when size "+ arrayToSort4.length+" and sort type is quickSort random element pivot : "+ estimatedTime);
 		 //printArray(arrayToSort4,arrayToSort.length);
 		 
-		//size 1000, 10000,  100000 yapýlarak quicksort MidOfFirstMidLastElement  pivot  iken decreasing integers array run time ý bulunabilir 
+		//size 1000, 10000,  100000 yapÃ½larak quicksort MidOfFirstMidLastElement  pivot  iken decreasing integers array run time Ã½ bulunabilir 
 		 startTime = System. currentTimeMillis();
 		 QuickSortClass.quickSort(arrayToSort4,"m");
 		 estimatedTime = System. currentTimeMillis() - startTime;
@@ -181,12 +181,12 @@ public class Test {
 	    }
 	
 	public static int[] decreasingArray(int size) {
-		//arrayin büyüklüðü
+		//arrayin bÃ¼yÃ¼klÃ¼Ã°Ã¼
 		int n= size;
 		int[] arr= new int[size];
 		 for(int i = 0 ; i < arr.length ; i++)
 		 {  
-		   //arrayin her indeksine size büyüklüðünden baþlanarak  0 a kadarki deðerler birer azalarak atandý
+		   //arrayin her indeksine size bÃ¼yÃ¼klÃ¼Ã°Ã¼nden baÃ¾lanarak  0 a kadarki deÃ°erler birer azalarak atandÃ½
 			 arr[i] = n;
 		      n--;
 		 }
@@ -195,11 +195,11 @@ public class Test {
 	}
 	
 	public static int[] increasingArray(int size) {
-		//arrayin büyüklüðü atandý
+		//arrayin bÃ¼yÃ¼klÃ¼Ã°Ã¼ atandÃ½
 		int[] arr= new int[size];
 		 for(int i = 0 ; i < arr.length ; i++)
 		 {  
-		   //arrayin her indeksine 0 dan  baþlanarak  size büyüklüðüne kadarki deðerler birer artýrýlarak atandý
+		   //arrayin her indeksine 0 dan  baÃ¾lanarak  size bÃ¼yÃ¼klÃ¼Ã°Ã¼ne kadarki deÃ°erler birer artÃ½rÃ½larak atandÃ½
 			 arr[i] = i;
 		    
 		 }
@@ -207,11 +207,11 @@ public class Test {
 		
 	}
 	public  static int[] equalArray(int size) {
-		//arrayin büyüklüðü atandý
+		//arrayin bÃ¼yÃ¼klÃ¼Ã°Ã¼ atandÃ½
 		int[] arr= new int[size];
 		 for(int i = 0 ; i < arr.length ; i++)
 		 {  
-		   //arrayin her indeksine 1 atandý, böylelikle tüm indekslerdeki deðerler eþit atandý
+		   //arrayin her indeksine 1 atandÃ½, bÃ¶ylelikle tÃ¼m indekslerdeki deÃ°erler eÃ¾it atandÃ½
 			 arr[i] = 1;
 		    
 		 }
@@ -220,13 +220,13 @@ public class Test {
 	}
 	public  static int[] randomArray(int size) {
 		
-		Random r=new Random(); //random sýnýfý
-		//arrayin büyüklüðü atandý
+		Random r=new Random(); //random sÃ½nÃ½fÃ½
+		//arrayin bÃ¼yÃ¼klÃ¼Ã°Ã¼ atandÃ½
 		int[] arr= new int[size];
 		 for(int i = 0 ; i < arr.length ; i++)
-		 {  // size büyüklüðü içinde 0 dan baþlayýp size -1 e kadarki deðerler içinden rastgele biri atandý
+		 {  // size bÃ¼yÃ¼klÃ¼Ã°Ã¼ iÃ§inde 0 dan baÃ¾layÃ½p size -1 e kadarki deÃ°erler iÃ§inden rastgele biri atandÃ½
 			 int rnd =r.nextInt(size); 
-		   //arrayin her indeksine rastgele atanan rnd deðeri atandý, 
+		   //arrayin her indeksine rastgele atanan rnd deÃ°eri atandÃ½, 
 			 arr[i] = rnd;
 		    
 		 }
